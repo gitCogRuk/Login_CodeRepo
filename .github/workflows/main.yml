@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-name: CI
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-
-    - name: Run unit tests
-      run: |
-        python -m unittest utest_iso20022_generator.py
-
-    - name: Run system tests
-      run: python -m unittest stest_iso20022_generator.py
-=======
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -92,13 +54,3 @@ jobs:
 
       - name: Run a one-line script
         run: python sample.py
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
-=======
->>>>>>> eb6a356a8da1e4d750888ca920b5d933193e19c7
